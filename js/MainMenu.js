@@ -67,12 +67,10 @@ function getLevel(index){
   ])
   .click(function(){
     if(parseInt(curlvl) == parseInt(index)) return;
-    yabanner(function(){
-        curlvl = parseInt(index);
-        pushedHelp = [];
-        unityInstance.SendMessage('Level', 'OpenLevel', curlvl);
-        $('#mm').html('').append(getMainMenu()).show();
-      });
+    curlvl = parseInt(index);
+    pushedHelp = [];
+    unityInstance.SendMessage('Level', 'OpenLevel', curlvl);
+    $('#mm').html('').append(getMainMenu()).show();
   });
 }
 

@@ -1,5 +1,6 @@
 var WinLoseListern = false;
 function GoPlay(skip = false){
+  $('#myalert').hide();
   let toGame = function(){
     $('.overlay').hide(300);
     WinLoseListern = true;

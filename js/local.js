@@ -33,11 +33,13 @@ function getLocalizationButtons(){
       window.lang = 'ru';
       localStorage['savelang'] = window.lang;
       showMainMenu();
+      $('#myalert').hide().html('Установлен русский язык').show(100);
     })),
     $('<p>').append($('<button>').text("English").click(function(){
       window.lang = 'en';
       localStorage['savelang'] = window.lang;
       showMainMenu();
+      $('#myalert').hide().html('The English language is set').show(100);
     }))
   ]);
 }
