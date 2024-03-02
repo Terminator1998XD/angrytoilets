@@ -1,0 +1,77 @@
+#score{
+  display: block;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  padding-top: 1vh;
+  padding-bottom: 1vh;
+  font-size: 3.5vh;
+  background-color: rgba(197, 196, 197, 0.49);
+  height: 4vh;
+}
+
+#levels{
+  display: block;
+}
+
+.level, #play{
+  display: inline-block;
+	width: 6vw;
+	height: 6vw;
+	margin: 2vw;
+	cursor: pointer;
+	text-align:center;
+	font-size: 0.5vw;
+	transition: 0.5s ease;
+  background-color: #639ee6;
+  border-radius: 15px;
+}
+
+.level:hover, #play:hover{
+	width: 6.1vw;
+	height: 6.1vw;
+  background-color: #2f8be0;
+}
+
+.lvlselect{
+  background-color: #0e59e0;
+}
+
+#play{
+  background-color: #2dad3e;
+}
+
+#play:hover{
+  background-color: #8be075;
+}
+
+.level .header{
+  display: block;
+  margin-top:1vh;
+  font-size: 3vh;
+  text-align: center;
+}
+
+.level .starContainer{
+  text-align: center;
+  width: 100%;
+  height: 49%;
+  margin-top:1vh;
+  padding: 1%;
+}
+
+.level .star{
+  display: inline-block;
+  width: 25%;
+  height: 49%;
+}
+
+.star img, #play img{
+  width: 100%;
+  height: 100%;
+}
+
+#score .star{
+  float: left;
+  width: 3vw;
+  height: 4vh;
+}
